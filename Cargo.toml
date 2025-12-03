@@ -1,0 +1,11 @@
+[package]
+name = "fuscen"
+version = "12.0.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = "0.10"
+clap = { version = "4.0", features = ["derive"] }
+sha2 = "0.10"
+socket2 = { version = "0.5", features = ["all"] }
+unicode-width = "0.1"

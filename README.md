@@ -10,3 +10,10 @@ Encrypted tunneling with zero-copy, nonblocking algo, async I/O and crypto-accel
 - Batched packet processing as option
 - Real-time traffic statistics
 - Nonblocking algoritm
+
+## 🛠️ Stack
+- Language: Rust w/ minimal unsafe
+- Networking: SCTP w/ Socket2 + Zero-Copy
+- Crypto: AES-128/256-GCM with custom KDF
+- Async: Custom epoll/kqueue
+- Main target platform: Linux/BSD with Kernel optimizations

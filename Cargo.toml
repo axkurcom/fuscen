@@ -1,11 +1,24 @@
 [package]
 name = "fuscen"
-version = "12.0.0"
+version = "13.0.0"
 edition = "2021"
+description = "Fast UDP-over-SCTP tunnel"
+
+[[bin]]
+name = "fuscen"
+path = "src/main.rs"
 
 [dependencies]
-aes-gcm = "0.10"
-clap = { version = "4.0", features = ["derive"] }
+aes-gcm = { version = "0.10", features = ["aes", "rand_core"] }
+clap = { version = "4.4", features = ["derive"] }
 sha2 = "0.10"
 socket2 = { version = "0.5", features = ["all"] }
+num_cpus = "1.16"
 unicode-width = "0.1"
+libc = "0.2"
+mio = { version = "0.8.8", features = ["net", "os-ext", "os-poll"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1

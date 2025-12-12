@@ -15,3 +15,10 @@ Encrypted tunneling with zero-copy, nonblocking algo, async I/O and crypto-accel
 - Language: Rust w/ minimal unsafe
 - Networking: SCTP on Socket2
 - Main target platform: Linux/BSD with Kernel optimizations
+
+## ⛏️ Work In Progress
+- SCTP Multistreaming
+- SCTP Multihoming
+
+## 🎯 Future
+- SCTP Multipath in the reference view

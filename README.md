@@ -22,3 +22,6 @@ Encrypted tunneling with zero-copy, nonblocking algo, async I/O and crypto-accel
 
 ## 🎯 Future
 - SCTP Multipath in the reference view
+
+## ⚡ Benchmarks
+1) 100 Mbps w/ IPerf3 + TCP Mode @ lossy link from DC K12 in Saint Petersburg to DC M9 in Moscow

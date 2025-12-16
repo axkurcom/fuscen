@@ -20,6 +20,7 @@ Encrypted tunneling with zero-copy, nonblocking algo, async I/O and crypto-accel
 - IO Uring
 - SCTP Multistreaming
 - SCTP Multihoming
+- IPv6 Support
 
 ## 🎯 Future
 - SCTP Multipath in the reference view
